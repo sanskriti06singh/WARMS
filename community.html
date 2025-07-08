@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Community - WARMS</title>
+    <style>
+    /* Community Page */
+.community {
+  padding: 2rem 1rem;
+}
+
+.community__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community__header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.community__header p {
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  line-height: 1.75rem;
+}
+
+.community__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Slightly lift the feature on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature__icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+.community__cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.community__cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.community__cta p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75rem;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">WARMS</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about.html">About Us</a></li>
+          <li class="link"><a href="services.html">Services</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn" onclick="location.href='login.html'">Login</button>
+      </nav>
+
+      <section class="community">
+        <div class="community__header">
+          <h1>Our Community</h1>
+          <p>
+            Connect, support, and grow together with like-minded individuals in
+            the WARMS community.
+          </p>
+        </div>
+
+        <div class="community__features">
+          <div class="feature">
+            <i class="ri-group-line feature__icon"></i>
+            <h3>Peer Support Groups</h3>
+            <p>
+              Join a supportive network of individuals who share similar
+              experiences and challenges. Find comfort and encouragement.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="ri-chat-4-line feature__icon"></i>
+            <h3>Discussion Forums</h3>
+            <p>
+              Share your thoughts, ask questions, and engage in meaningful
+              conversations with the community members.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="ri-heart-line feature__icon"></i>
+            <h3>Volunteer Opportunities</h3>
+            <p>
+              Make a difference by participating in community service and
+              volunteering opportunities organized by WARMS.
+            </p>
+          </div>
+        </div>
+
+        <div class="community__cta">
+          <h2>Join the Conversation</h2>
+          <p>
+            Become an active member of our community today. Together, we can
+            create lasting change and build a brighter future.
+          </p>
+          <button class="btn" onclick="location.href='register.html'">
+            Join Now
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Register - WARMS</title>
+    <style>
+        .register__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.register {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.register__form h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.register__form p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form__group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.form__group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form__group input:focus {
+  border-color: var(--primary-color);
+}
+
+.form__group button {
+  width: 100%;
+}
+
+.form__footer {
+  margin-top: 1rem;
+  color: var(--text-light);
+}
+
+.form__footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form__footer a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container register__container">
+      <nav>
+        <div class="nav__logo">WARMS</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about.html">About Us</a></li>
+          <li class="link"><a href="services.html">Services</a></li>
+          <li class="link"><a href="community.html">Community</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn" onclick="location.href='login.html'">Login</button>
+      </nav>
+
+      <section class="register">
+        <div class="register__form">
+          <h1>Join WARMS Today</h1>
+          <p>Fill in the details to create your account</p>
+          <form action="#" method="POST">
+            <div class="form__group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <button class="btn" type="submit">Register</button>
+            </div>
+            <div class="form__footer">
+              <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
