@@ -8,7 +8,6 @@ WARMS is a social impact web platform aimed at supporting widows, especially in 
 
 ## 🌐 Live Demo: https://sanskriti06singh.github.io/WARMS/
 
-🚧 **Coming Soon** – 
 
 ---
 
